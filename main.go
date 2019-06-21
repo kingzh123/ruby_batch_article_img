@@ -12,7 +12,6 @@ var (
 	a = make([]module.Articles,0)
 	test_domain = "jfinfo-test.oss-cn-beijing.aliyuncs.com"
 	pro_domain = "jfinfo.oss-cn-beijing.aliyuncs.com"
-	//default_img = `<img src="https://jfinfo.oss-cn-beijing.aliyuncs.com/uploads/default/WX20190618-150448.png" />`
 	default_img = ``
 	wg sync.WaitGroup
 	size = 1000
@@ -44,7 +43,7 @@ func runModule(table string)  {
 		TagKey("orm").
 		RealNameMethod("articles").
 		SavePath("./module/articles.go").
-		Dsn("jfinfo_qa_ruby:ffc+ZUvzh35p@tcp(rm-2ze4ic7pv96x86o526o.mysql.rds.aliyuncs.com:3306)/jfinfo_qa?charset=utf8").
+		Dsn("").
 		// 执行
 		Run()
 	if err != nil {

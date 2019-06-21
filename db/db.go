@@ -20,12 +20,11 @@ var (
 	test_domain = "jfinfo-test.oss-cn-beijing.aliyuncs.com"
 	pro_domain = "jfinfo.oss-cn-beijing.aliyuncs.com"
 	default_img = ``
-	//default_img = `<img src="https://jfinfo.oss-cn-beijing.aliyuncs.com/uploads/default/WX20190618-150448.png" />`
 )
 
 func init() {
-	//dbw, err = sql.Open("mysql", "jfinfo_qa_ruby:ffc+ZUvzh35p@tcp(rm-2ze4ic7pv96x86o526o.mysql.rds.aliyuncs.com:3306)/jfinfo_qa?charset=utf8")
-	dbw, err = sql.Open("mysql", "jfinfo_ruby:yH40l=Lydtet@tcp(rm-2zehm9x9dn6dbwbrm763.mysql.rds.aliyuncs.com:3306)/jfinfo?charset=utf8mb4")
+	//dbw, err = sql.Open("mysql", "")
+	dbw, err = sql.Open("mysql", "")
 	if err != nil {
 		log.FileLog(err.Error())
 		panic(err)
